@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <title>My Webpage</title>
+    <title>E-Sandwich</title>
 </head>
+
 <body>
-    <!-- Your content goes here -->
-    <h1>Hello World!</h1>
-    <div id="kitty">
-        <img src="images/kitten.jpg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
-    </div>
-</body>
-</html>
+    <h1>The Sandwich Shop</h1>
+    <form>
+        <label for="name">Sandwich title:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <div>
+             <p>Choose a bread</p>
+             <label for="white">white</label>
+             <input type="radio" id="white" name="bread" value="white">
+             <br>
+             <label for="wheat">wheat</label>
+             <input type="radio" id="wheat" name="bread" value="wheat">
+             <br>
+             <label for="sourdough">sourdough</label>
+             <input type="radio" id="sourdough" name="bread" value="sourdough">
+             <br>
+             <label for="brioche">brioche</label>
+             <input type="radio" id="brioche" name="bread" value="brioche">
+             <br>
+             <label for="french">french</label>
+             <input type="radio" id="french" name="bread" value="french">
+        </div>
+
+        <div>
+            <label for="protein">Choose Protein:</label>
+            <select id="protein">
+               <option value="turkey">Turkey</option>
+               <option value="ham">Ham</option>
+               <option value="bacon">Bacon</option>
+               <option value="salami">Salami</option>
+               <option value="chorizo">Chorizo</option>
+             </select>
+        </div>
+
+         <div>
+            <p>Choose your toppings:</p>
+            <label for "lettuce">Lettuce</label>
+            <input type="checkbox" id="lettuce" name="lettuce" value="lettuce"><br>
+            <label for "cheese">Cheese</label>
+            <input type="checkbox" id="cheese" name="cheese" value="cheese"><br>
+            <label for "tomato">Tomato</label>
+            <input type="checkbox" id="tomato" name="tomato" value="tomato"><br>
+            <label for "onion">Onion</label>
+            <input type="checkbox" id="onion" name="onion" value="onion"><br>
+            <label for "mustard">Mustard</label>
+            <input type="checkbox" id="mustard" name="mustard" value="mustard"><br>
+            <label for "mayo">Mayo</label>
+            <input type="checkbox" id="mayo" name="mayo" value="mayo"><br>
+            <label for "spinach">Spinach</label>
+            <input type="checkbox" id="spinach" name="spinach" value="spinach"><br>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+
+
+    </html>
